@@ -1,0 +1,98 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        >
+    <Grid Background="LightBlue">
+
+        <Image Source="D:\5e34ee90416e2e78c95117fa_94A580F0-7942-47A8-AA97-98ACE24FCC49_1024x1024.webp" Margin="-255,0,255,0">
+
+        </Image>
+        <Canvas>
+            <Label Content=" Library" 
+               FontSize="50" 
+               FontWeight="Bold" 
+               Foreground="DarkSlateBlue" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" Canvas.Left="456" Canvas.Top="65"/>
+
+            <Button BorderBrush="Gray" 
+                BorderThickness="3" 
+                Name="btnStudentLogin" 
+                Content="login" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Height="44" 
+                Width="136"
+                Background="White" Click="btnStudentLogin_Click" Canvas.Left="483" Canvas.Top="188">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="FontSize" Value="16"/>
+                        <Setter Property="Margin" Value="5"/>
+                        <Setter Property="Padding" Value="10,0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button BorderBrush="Gray" 
+                BorderThickness="3" 
+                x:Name="btnStudentRegister" 
+                Content="Student register" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Height="44" 
+                Width="136"
+                Background="White" Click="btnStudentRegister_Click" Canvas.Left="483" Canvas.Top="242">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            CornerRadius="20">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="FontSize" Value="16"/>
+                        <Setter Property="Margin" Value="5"/>
+                        <Setter Property="Padding" Value="10,0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </Canvas>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.RentBookDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="RentBookDetailWindow" Height="276" Width="286" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <StackPanel Margin="0,0,0,59" Background="LightBlue">
+            <Label>Title</Label>
+            <TextBox Name="txtTitle" IsReadOnly="True"></TextBox>
+            <Label>Author</Label>
+            <TextBox Name="txtAuthor" IsReadOnly="True"></TextBox>
+            <Label>Category</Label>
+            <TextBox Name="txtCategory" IsReadOnly="True"></TextBox>
+            <Label>Content</Label>
+            <TextBox Name="txtContent" IsReadOnly="True"></TextBox>
+        </StackPanel>
+        <TextBlock Name="txtBookDetails" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,10,10"/>
+        <Button Name="btnConfirmRent" Content="Confirm Rent" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="btnConfirmRent_Click"/>
+        <Button Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="btnCancel_Click"/>
+    </Grid>
+</Window>

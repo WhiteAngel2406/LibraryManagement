@@ -1,0 +1,56 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.ManageStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="ManageStudent" Height="528" Width="875" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="LightBlue">
+    <Grid Margin="0,65,343,149">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="369*"/>
+            <ColumnDefinition Width="147*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="dgStudent" Margin="0,28,0,-83" SelectionChanged="dgStudent_SelectionChanged" Grid.ColumnSpan="3">
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.071"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+        </DataGrid>
+        <StackPanel Margin="63,12,-307,-56" Grid.Column="2">
+            <Label FontWeight="Bold">Student Id</Label>
+            <TextBox Name="txtStudentId" IsReadOnly="True"></TextBox>
+            <Label FontWeight="Bold">Student</Label>
+            <TextBox Name="txtStudentName" ></TextBox>
+            <Label FontWeight="Bold">Email</Label>
+            <TextBox Name="txtEmail" ></TextBox>
+            <Label FontWeight="Bold">Phone number</Label>
+            <TextBox Name="txtPhoneNumber" ></TextBox>
+            <Label FontWeight="Bold">BirthDate</Label>
+            <DatePicker Name="dpBirthDate" ></DatePicker>
+            <Label FontWeight="Bold">Class</Label>
+            <TextBox Name="txtClass" ></TextBox>
+            <Label FontWeight="Bold">PassWord</Label>
+            <PasswordBox Name="txtPassword" ></PasswordBox>
+        </StackPanel>
+        <Button Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="10,-47,0,0" VerticalAlignment="Top" Width="57" Height="22" Click="btnBack_Click"/>
+        <Canvas Margin="43,359,-373,-109" Grid.Column="2">
+            <Button Name="btnRefresh" Content="Refresh" Canvas.Left="20" Canvas.Top="14" Height="23" Width="49" Click="btnRefresh_Click"/>
+            <Button Name="btnAdd" Content="Add" Canvas.Left="86" Canvas.Top="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="52" Height="23" Click="btnAdd_Click"/>
+            <Button Name="btnEdit" Content="Edit" Canvas.Left="221" Canvas.Top="14" HorizontalAlignment="Center" VerticalAlignment="Top" Width="53" Height="23" Click="btnEdit_Click"/>
+            <Button Name="btnRemove" Content="Remove" Canvas.Left="157" Canvas.Top="14" HorizontalAlignment="Center" VerticalAlignment="Top" Height="23" Width="51" Click="btnRemove_Click"/>
+
+        </Canvas>
+        <TextBlock HorizontalAlignment="Left" Margin="260,-47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Height="22"/>
+        <TextBox Name="txtSearch" HorizontalAlignment="Left" Margin="345,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+        <Button Name="btnSearch" Grid.Column="1" Content="Search" HorizontalAlignment="Left" Margin="96,-3,0,0" VerticalAlignment="Top" Height="24" Width="45" Click="btnSearch_Click"/>
+        <Button Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="19,-6,0,0" VerticalAlignment="Top" Width="89" Click="btnExport_Click"/>
+
+    </Grid>
+</Window>

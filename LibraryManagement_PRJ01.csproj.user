@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AcceptBorrowBook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminBorrowManage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BorrowManage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChangePassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageBooks.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageStudent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewPasswordEmail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RentBookDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SendMail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudentBorrow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudentHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudentLoginForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudentRegisterForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AcceptBorrowBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminBorrowManage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BorrowManage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChangePassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageBooks.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageStudent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewPasswordEmail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RentBookDetailWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SendMail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudentBorrow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudentHome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudentLoginForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudentRegisterForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,61 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.ManageBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="ManageBooks" Height="506" Width="1050" WindowStartupLocation="CenterScreen" >
+
+    <Grid Background="LightBlue">
+        
+        <Image Source="D:\pexels-photo-1907785.jpeg" Margin="-361,-2,361,0" ></Image>
+        <DataGrid Name="dgBook" Margin="330,67,269,165" SelectionChanged="dgBook_SelectionChanged"/>
+        <Label Content="Books Management" Foreground="Green" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" Margin="430,-2,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbTitle" HorizontalAlignment="Left" Margin="365,43,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbTitle_SelectionChanged"/>
+        <Label Content="Title" FontWeight="Bold" HorizontalAlignment="Left" Margin="330,41,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtSearch" HorizontalAlignment="Left" Margin="604,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="724,45,0,0" VerticalAlignment="Top" Background="{x:Null}" RenderTransformOrigin="0.7,0.5" ClickMode="Press" Click="btnSearch_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+
+        <StackPanel Margin="781,67,10,46">
+            <Label FontWeight="Bold" Content="Id"  VerticalAlignment="Top"/>
+            <TextBox IsReadOnly="True" Name="txtId"  TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Label FontWeight="Bold" Content="Title" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox Name="txtTitle" VerticalAlignment="Top"/>
+            <Label FontWeight="Bold" Content="Category" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox Name="txtCategory" TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Label FontWeight="Bold" Content="Descriotion" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <TextBox Name="txtDescription" VerticalAlignment="Top"  />
+            <Label FontWeight="Bold" Content="Author" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <TextBox Name="txtAuthor"  TextWrapping="Wrap" VerticalAlignment="Top" />
+            <Label FontWeight="Bold" Content="Amount" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox Name="txtAmount"  TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label FontWeight="Bold" Content="PublicationYear" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <TextBox Name="txtPubYear" TextWrapping="Wrap"  VerticalAlignment="Top" />
+            <Label FontWeight="Bold" Content="PublishingHouse" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <TextBox Name="txtPubHouse"  TextWrapping="Wrap" VerticalAlignment="Top" />
+        </StackPanel>
+        <Button Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="992,10,0,0" VerticalAlignment="Top" Height="20" Width="46" Click="btnBack_Click"/>
+        <Button Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="781,444,0,0" VerticalAlignment="Top" Width="52" Click="btnRefresh_Click"/>
+        <Button Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="850,444,0,0" VerticalAlignment="Top" Width="50" Click="btnAdd_Click"/>
+        <Button Name="btnEdit" Content="Edit" HorizontalAlignment="Left" Margin="918,444,0,0" VerticalAlignment="Top" Width="53" Click="btnEdit_Click"/>
+        <Button Name="btnRemove" Content="Remove" HorizontalAlignment="Left" Margin="986,444,0,0" VerticalAlignment="Top" Click="btnRemove_Click"/>
+        <Label Content="Book Amount:" HorizontalAlignment="Left" Margin="333,325,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtBookAmount" HorizontalAlignment="Left" Margin="424,330,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Book Total Amount:" HorizontalAlignment="Left" Margin="333,351,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtTotalBook" HorizontalAlignment="Left" Margin="452,356,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button Name="btnExport" Content="Export to Excel" HorizontalAlignment="Left" Margin="682,330,0,0" VerticalAlignment="Top" Click="btnExport_Click"/>
+
+
+    </Grid>
+</Window>

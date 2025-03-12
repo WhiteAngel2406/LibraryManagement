@@ -1,0 +1,55 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.AdminHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="AdminHome" Height="528" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <StackPanel Margin="0,46,603,0">
+            <Image Source="D:\F0clq6ws5ZtFU8IG4Yz8p1QN4SJdMTXAZPGsEidOFd9N40YQWC-1500x1990.jpg" RenderOptions.BitmapScalingMode="Fant"
+       Stretch="Fill" Height="463" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.135"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.598"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </StackPanel>
+        <DataGrid Name="dgPendingStudent" Margin="202,124,213,0" SelectionChanged="dgBook_SelectionChanged"/>
+        <Button Name="btnStudent" Content="Manage Student" HorizontalAlignment="Left" Margin="202,10,0,0" VerticalAlignment="Top" Width="113" Height="25" Click="btnStudent_Click"/>
+        <Button Name="btnBook"  Content="Manage Books" HorizontalAlignment="Left" Margin="334,10,0,0" VerticalAlignment="Top" Width="112" Height="25" Click="btnBook_Click"/>
+        <Button Name="btnBorrow"  Content="Manage Borrow" HorizontalAlignment="Left" Margin="475,10,0,0" VerticalAlignment="Top" Width="112" Height="25" Click="btnBorrow_Click"/>
+        <Button Name="Pending"  Content="Pending" HorizontalAlignment="Left" Margin="604,10,0,0" VerticalAlignment="Top" Width="112" Height="25" Click="Pending_Click"/>
+        <TextBox Name="txtSearch" HorizontalAlignment="Left" Margin="383,102,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
+        <Button Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="524,101,0,0" VerticalAlignment="Top" Width="51"/>
+        <Button Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Margin="736,13,0,0" VerticalAlignment="Top" Click="btnLogout_Click"/>
+
+        <StackPanel Margin="604,124,10,10">
+            <Label FontWeight="Bold">Student Id</Label>
+            <TextBox Name="txtStudentId" IsReadOnly="True" ></TextBox>
+            <Label FontWeight="Bold">Student</Label>
+            <TextBox IsReadOnly="true" Name="txtStudentName" ></TextBox>
+            <Label FontWeight="Bold">Email</Label>
+            <TextBox IsReadOnly="true" Name="txtEmail" ></TextBox>
+            <Label FontWeight="Bold">Phone number</Label>
+            <TextBox IsReadOnly="true" Name="txtPhoneNumber" ></TextBox>
+            <Label FontWeight="Bold">BirthDate</Label>
+            <DatePicker Name="dpBirthDate" IsEnabled="False"></DatePicker>
+            <Label FontWeight="Bold">Class</Label>
+            <TextBox IsReadOnly="True" Name="txtClass" ></TextBox>
+            <Label FontWeight="Bold">PassWord</Label>
+            <PasswordBox Name="txtPassword" IsEnabled="False"></PasswordBox>
+            <Button Name="btnAccept" Click="btnAccept_Click">Accept</Button>
+            <Button Margin="0,2,0,0" Name="btnRemove" Click="btnRemove_Click" >Remove</Button>
+        </StackPanel>
+        <TextBox Name="txtPendingNumber" HorizontalAlignment="Left" Margin="304,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24"/>
+        <Label Content="Student Register:" HorizontalAlignment="Left" Margin="202,95,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

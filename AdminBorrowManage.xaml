@@ -1,0 +1,28 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.AdminBorrowManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="AdminBorrowManage" Height="450" Width="800">
+    <Grid>
+        <Image Source="D:\F0clq6ws5ZtFU8IG4Yz8p1QN4SJdMTXAZPGsEidOFd9N40YQWC-1500x1990.jpg" Margin="-172,0,299,0" Height="433" Width="328">
+
+        </Image>
+        <DataGrid Name="dgMuonSach" LoadingRow="dgMuonSach_LoadingRow" Margin="328,41,10,114"/>
+        <ComboBox Name="cbbStatus" HorizontalAlignment="Left" Margin="670,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbbStatus_SelectionChanged"/>
+        <Label Content="Status" FontWeight="Bold" HorizontalAlignment="Left" Margin="627,12,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnReturn" Content="Return Book" HorizontalAlignment="Left" Margin="690,338,0,0" VerticalAlignment="Top" Height="24" Width="80" Click="btnReturn_Click"/>
+        <Button Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="333,14,0,0" VerticalAlignment="Top" Width="60" Click="btnBack_Click"/>
+        <Label Content="Books on loan:" FontWeight="Bold" HorizontalAlignment="Left" Margin="344,320,0,0" VerticalAlignment="Top"/>
+        <Label Content="Overdue:" FontWeight="Bold" HorizontalAlignment="Left" Margin="344,344,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtBookOnLoan" HorizontalAlignment="Left" Margin="442,325,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBlock Name="txtOverDue" HorizontalAlignment="Left" Margin="410,349,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Label Content="Total:" FontWeight="Bold" HorizontalAlignment="Left" Margin="344,365,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtTotal" HorizontalAlignment="Left" Margin="393,370,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button Name="txtExport" Content="Export" HorizontalAlignment="Left" Margin="344,391,0,0" VerticalAlignment="Top" Width="54" Click="txtExport_Click"/>
+        <Button Name="txtSendEmail" Content="Send Email for Overdue" HorizontalAlignment="Left" Margin="433,391,0,0" VerticalAlignment="Top" Width="142" Click="txtSendEmail_Click"/>
+
+    </Grid>
+</Window>

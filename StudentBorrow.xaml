@@ -1,0 +1,15 @@
+﻿<Window x:Class="LibraryManagement_PRJ01.StudentBorrow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement_PRJ01"
+        mc:Ignorable="d"
+        Title="StudentBorrow" Height="332" Width="471" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <DataGrid Name="dgStudentBorrow" LoadingRow="dgMuonSach_LoadingRow" Margin="0,70,0,0"/>
+        <ComboBox Name="cbbStatus" HorizontalAlignment="Left" Margin="60,43,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbbStatus_SelectionChanged"/>
+        <Label Content="Status" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
